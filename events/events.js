@@ -7,6 +7,14 @@ function randomX() {
 function randomY() {
   return Math.random() * $(window).height();
 }
+
+$("#moveButton").on("click",function(){
+	var x = randomX();
+	var y = randomY();
+	$("#message").css("left",x);
+	$("#message").css("top",y);
+
+})
 /* END PROVIDED CODE */
 
 // Write your code below this line :)
